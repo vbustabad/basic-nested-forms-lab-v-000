@@ -5,17 +5,17 @@
   Ingredients:
 
   <%= f.fields_for :ingredients do |ingredient| %>
-    <%= addr.label :ingredient_0 %>
-    <%= addr.text_field :ingredient_0 %><br>
+    <%= ingredient.label :ingredient_0 %>
+    <%= ingredient.text_field :ingredient_0 %><br>
 
-    <%= addr.label :ingredient_1 %>
-    <%= addr.text_field :ingredient_1 %><br>
+    <%= ingredient.label :ingredient_1 %>
+    <%= ingredient.text_field :ingredient_1 %><br>
 
-    <%= addr.label :name %>
-    <%= addr.text_field :name %><br>
+    <%= ingredient.label :name %>
+    <%= ingredient.text_field :name %><br>
 
-    <%= addr.label :quantity %>
-    <%= addr.text_field :quantity %><br>
+    <%= ingredient.label :quantity %>
+    <%= ingredient.text_field :quantity %><br>
 
   <% end %>
   <br />
