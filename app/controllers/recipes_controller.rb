@@ -19,11 +19,11 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
 
-    if @recipe.new
+    if @recipe.save
       redirect_to recipe_path
-    else 
+    else
       render :new
-    end 
+    end
   end
 
   def recipe_params
