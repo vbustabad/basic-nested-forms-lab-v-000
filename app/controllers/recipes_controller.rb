@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
 
     if @recipe.save
-      redirect_to recipe_path
+      redirect_to recipe_path(@recipe)
     else
       render :new
     end
